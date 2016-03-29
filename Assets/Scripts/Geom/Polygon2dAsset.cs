@@ -26,9 +26,8 @@ namespace Geom
             if (asset == null)
                 return;
 
-            AssetDatabase.SaveAssets();
+			AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
-            EditorUtility.FocusProjectWindow();
             Selection.activeObject = asset;
         }
 #endif

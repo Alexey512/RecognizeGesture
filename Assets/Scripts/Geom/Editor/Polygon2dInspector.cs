@@ -43,8 +43,9 @@ namespace Geom
 
             if (GUILayout.Button("Save Asset"))
             {
-                Polygon2dAsset.SaveAssets(polygon.Polygon);
-                EditorUtility.SetDirty(polygon);
+				EditorUtility.SetDirty(polygon);
+				EditorUtility.SetDirty(polygon.Polygon);
+				Polygon2dAsset.SaveAssets(polygon.Polygon);
             }
         }
 
